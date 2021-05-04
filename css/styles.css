@@ -1,0 +1,118 @@
+:root {
+  --background: #1f1f1f;
+  --background-secundary: #444444;
+  --bgc-line: #666666;
+  --color: #fafafa;
+
+  /* Colors primary */
+  --bgc-primary: #436CFF;
+  --bgc-primary-secundary: #5C80FF;
+  --bgc-primary-hover: #3A5EDF;
+
+  /* Colors secundarys*/
+  /* Red */
+  --bgc-danger-primary: #EF3748;
+  --bgc-danger-secundary: #E7606D;
+  --bgc-danger-hover: #DD2B3C;
+
+  /* Green */
+  --bgc-success-primary: #20B004;
+  --bgc-success-secundary: #55B742;
+  --bgc-success-hover: #22990B;
+
+  --font-size: 16px;
+  --font-titles: 'Raleway', sans-serif;
+  --font-text: 'Roboto', sans-serif;
+
+  --header-height: 60px;
+  --height-check: 18px;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font: var(--font-size) var(--font-text);
+  /* background-color: var(--background); */
+  /* color: var(--color); */
+}
+img {
+  max-width: 100%;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  padding: 1rem 2.5rem;
+  height: 500px;
+  /* background-color: var(--background); */
+  box-shadow: 1px 1px 5px var(--bgc-line);
+  border-radius: .5rem;
+}
+.login__logotipo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logotipo {
+  height: 120px;
+}
+.img{
+  display: block;
+  height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form {
+  background-color: var(--color);
+  padding: .5rem 1rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 5px var(--bgc-line), 0 0 5px var(--bgc-line);
+  margin-top: 10px;
+}
+.subtitle {
+  text-align: center;
+  color: var(--bgc-primary);
+  font-family: inherit;
+  font-weight: 700;
+}
+
+.field {
+  padding: .5rem;
+  margin-bottom: 10px;
+}
+.form__input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  padding: .5rem 1rem;
+  font-family: inherit;
+  font-size: inherit;
+  box-shadow: 0 0 3px var(--bgc-line);
+  border-radius: .5rem;
+  color: var(--background-secundary);
+}
+
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  background-color: var(--bgc-primary);
+  color: var(--color);
+  font-family: inherit;
+  font-size: inherit;
+  padding: .5rem 2rem;
+  border-radius: .5rem;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: var(--bgc-primary-hover);
+}
