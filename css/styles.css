@@ -1,9 +1,9 @@
 :root {
 	--dark-color 				: #1f1f1f;
 	--dark-color-alt			: #444444;
-	--dark-color-line			: #666666;
-
-	--color-text				: #fafafa;
+	
+	--color-line			: #666666;
+	--color-light				: #fafafa;
  
 	/* First color */
 	/* --first-color				: #436CFF;
@@ -37,8 +37,6 @@
 body {
   margin: 0;
   font: var(--font-size) var(--font-text);
-  /* background-color: var(--background); */
-  /* color: var(--color); */
 }
 img {
   max-width: 100%;
@@ -53,8 +51,7 @@ img {
 .login {
   padding: 1rem 2.5rem;
   height: 500px;
-  /* background-color: var(--background); */
-  box-shadow: 1px 1px 5px var(--bgc-line);
+  box-shadow: 1px 1px 5px var(--color-line);
   border-radius: .5rem;
 }
 .login__logotipo{
@@ -73,15 +70,15 @@ img {
 }
 
 .form {
-  background-color: var(--color);
+  background-color: var(--color-light);
   padding: .5rem 1rem 1rem;
   border-radius: 1rem;
-  box-shadow: 0 0 5px var(--bgc-line), 0 0 5px var(--bgc-line);
+  box-shadow: 0 0 5px var(--color-line), 0 0 5px var(--color-line);
   margin-top: 10px;
 }
 .subtitle {
   text-align: center;
-  color: var(--bgc-primary);
+  color: var(--first-color);
   font-family: inherit;
   font-weight: 700;
 }
@@ -97,9 +94,9 @@ img {
   padding: .5rem 1rem;
   font-family: inherit;
   font-size: inherit;
-  box-shadow: 0 0 3px var(--bgc-line);
+  box-shadow: 0 0 3px var(--color-line);
   border-radius: .5rem;
-  color: var(--background-secundary);
+  color: var(--dark-color-alt);
 }
 
 .button {
@@ -109,8 +106,8 @@ img {
   border: none;
   outline: none;
   background-color: transparent;
-  background-color: var(--bgc-primary);
-  color: var(--color);
+  background-color: var(--first-color);
+  color: var(--color-light);
   font-family: inherit;
   font-size: inherit;
   padding: .5rem 2rem;
@@ -118,5 +115,5 @@ img {
   cursor: pointer;
 }
 .button:hover {
-  background-color: var(--bgc-primary-hover);
+  background-color: var(--first-color-hover);
 }
