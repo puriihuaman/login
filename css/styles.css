@@ -1,66 +1,83 @@
 :root {
 	/* Colores */
-	--dark-color: #162530;
-	--dark-color-alt: #111D26;
+	--dark-color400: #575e66;
+	--dark-color500: #162530;
+	--dark-color600: #192229;
 
-	--color-line: #38607D;
-
-	--color-light: #fafafa;
-	--color-light-alt: #F6EDFC;
+	--light-color500: #F6EDFC;
+	--light-color600: #fafafa;
 
 	/* First color */
-	--first-color				: #436CFF;
-	--first-color-alt			: #5C80FF;
-	--first-color-hover		: #3A5EDF;
+	--first-color400: #5C80FF;
+	--first-color500: #436CFF;
+	--first-color600: #3A5EDF;
 
 	/* Second color */
-	--second-color: #ef3748;
-	--second-color-alt: #E36F7B;
-	--second-color-hover: #dd2b3c;
+	--second-color400: #E36F7B;
+	--second-color500: #ec4052;
+	--second-color600: #d63343;
 
 	/* Third color */
-	--third-color: #20b004;
-	--third-color-alt: #55b742;
-	--third-color-hover: #22990b;
+	--third-color400: #FFC14D;
+	--third-color500: #ffa500;
+	--third-color600: #E69500;
+
+	/* otros colores */
+	--four-color400: #55b742;
+	--four-color500: #20b004;
+	--four-color600: #22990b;
 
 	/* Fonts Family */
-	--font-titles: 'Raleway', sans-serif;
-	--font-text: 'Open Sans', sans-serif;
+	--heading-font: 'Raleway', sans-serif;
+	--body-font: 'Open Sans', sans-serif;
 
 	/* Fonts size */
 	--h1-font-size: 2rem;
 	--h2-font-size: 1.5rem;
-	--font-size: 1rem;
+	--h3-font-size: 1.25rem;
+	--normal-font-size: 1rem;
 	--small-font-size: .85rem;
+
+	/* Width layout */
+	--width-layout: 1200px;
 
 	/* Heights */
 	--header-height: 3rem;
+
+	/* Paddings */
+	--small-padding: 0.5rem;
+	--normal-padding: 1rem;
+	--large-padding: 1.5rem;
+	--x-large-padding: 2rem;
+
+	/* Border-radius */
+	--border-radius: 0.3rem;
+
+
+	/* Z-index */
+	--z-index100: 100;
+	--z-index200: 110;
+	--z-index300: 120;
+
+
+	/* Medidas tabla */
+	--width-table: 1000px;
+	--height-table: 300px;
+	--frozen-width: 10rem;
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 64rem) {
 	:root {
 		/* Fonts size */
 		--h1-font-size: 2.5rem;
 		--h2-font-size: 1.75rem;
-		--font-size: 1.1rem;
+		--h3-font-size: 1.50rem;
+		--normal-font-size: 1.1rem;
 		--small-font-size: .95rem;
 
 		/* Heights */
 		--header-height: 4rem;
 	}
-}
-* {
-	box-sizing: border-box;
-}
-img {
-	max-width: 100%;
-}
-body {
-  margin: 0;
-  font: var(--font-size) var(--font-text);
-}
-img {
-  max-width: 100%;
 }
 
 .container {
@@ -72,7 +89,7 @@ img {
 .login {
   padding: 1rem 2.5rem;
   height: 500px;
-  box-shadow: 1px 1px 5px var(--color-line);
+  box-shadow: 1px 1px 5px var(--dark-color400);
   border-radius: .5rem;
 }
 .login__logotipo{
@@ -91,15 +108,15 @@ img {
 }
 
 .form {
-  background-color: var(--color-light);
+  background-color: var(--light-color500);
   padding: .5rem 1rem 1rem;
   border-radius: 1rem;
-  box-shadow: 0 0 5px var(--color-line), 0 0 5px var(--color-line);
+  box-shadow: 0 0 5px var(--dark-color400), 0 0 5px var(--dark-color400);
   margin-top: 10px;
 }
 .subtitle {
   text-align: center;
-  color: var(--first-color);
+  color: var(--first-color500);
   font-family: inherit;
   font-weight: 700;
 }
@@ -115,9 +132,9 @@ img {
   padding: .5rem 1rem;
   font-family: inherit;
   font-size: inherit;
-  box-shadow: 0 0 3px var(--color-line);
+  box-shadow: 0 0 3px var(--dark-color400);
   border-radius: .5rem;
-  color: var(--dark-color-alt);
+  color: var(--dark-color600);
 }
 
 .button {
@@ -127,8 +144,8 @@ img {
   border: none;
   outline: none;
   background-color: transparent;
-  background-color: var(--first-color);
-  color: var(--color-light);
+  background-color: var(--first-color500);
+  color: var(--light-color600);
   font-family: inherit;
   font-size: inherit;
   padding: .5rem 2rem;
@@ -136,5 +153,5 @@ img {
   cursor: pointer;
 }
 .button:hover {
-  background-color: var(--first-color-hover);
+  background-color: var(--first-color600);
 }
